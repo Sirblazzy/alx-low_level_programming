@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints the number of arguments 
-passed into it
+ * main - Prints the number of arguments passed into it
  * @argc: Size of the argumente array
  * @argv: The input argument array
  * Return: Zero as success
