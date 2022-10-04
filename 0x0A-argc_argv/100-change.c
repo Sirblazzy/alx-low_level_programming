@@ -14,26 +14,26 @@
  */
 int main(int argc, char *argv[])
 {
-  int c25, c10, c5, c2, c1, change;
+int c25, c10, c5, c2, c1, change;
 
-  if (argc != 2)
-    {
-      printf("Error\n");
-    }
-  else if (atoi(argv[1]) < 0)
-    {
-      printf("0\n");
-    }
-  else
-    {
-      c25 = atoi(argv[1]) / 25;
-      c10 = (atoi(argv[1]) % 25) / 10;
-      c5 = ((atoi(argv[1]) % 25) % 10) / 5;
-      c2 = (((atoi(argv[1]) % 25) % 10) % 5) / 2;
-      c1 = (((atoi(argv[1]) % 25) % 10) % 5) % 2;
-      change = c25 + c10 + c5 + c2 + c1;
-      printf("%d\n", change);
-    }
-  return (0);
+if (argc != 2)
+{
+printf("Error\n");
+}
+else if (atoi(argv[1]) < 0)
+{
+printf("0\n");
+}
+else
+{
+c25 = atoi(argv[1]) / 25;
+c10 = (atoi(argv[1]) % 25) / 10;
+c5 = ((atoi(argv[1]) % 25) % 10) / 5;
+c2 = (((atoi(argv[1]) % 25) % 10) % 5) / 2;
+c1 = (((atoi(argv[1]) % 25) % 10) % 5) % 2;
+change = c25 + c10 + c5 + c2 + c1;
+printf("%d\n", change);
+}
+return (0);
 }
 
