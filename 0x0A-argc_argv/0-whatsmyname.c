@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints the name of the programe 
-followed by a new line
+ * main-Prints the name of the programe followed by a new line
  * @argc: Size of the argumente array
  * @argv: The input argument array
  * Return: Zero as success
