@@ -1,6 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  *new_dog - struct returning
  *@name: dog name
@@ -42,10 +43,10 @@ dog_t *new_dog(char *name, float age, char *owner)
   dog1->owner = malloc(sizeof(dog1->owner) * ownerSize);
   if (dog1->owner == NULL)
     {
-      free(dog1->owner);
-      free(dog1->name);
-      free(dog1);
-      return (NULL);
+free(dog1->owner);
+free(dog1->name);
+free(dog1);
+return (NULL);
     }
   for (loop = 0; loop <= ownerSize; loop++)
     dog1->owner[loop] = owner[loop];
